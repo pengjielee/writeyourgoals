@@ -1,0 +1,5 @@
+node_modules/*
+src/miniprogram/node_modules/*
+src/miniprogram/miniprogram_npm/*
+src/miniprogram/*-lock.json
+src/cloudfunctions/**/node_modules/*

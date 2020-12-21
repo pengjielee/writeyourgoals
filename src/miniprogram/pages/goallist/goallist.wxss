@@ -1,0 +1,131 @@
+page {
+  height: 100vh;
+}
+
+button,
+button::after {
+  border-radius: 0;
+  border: none;
+}
+
+.swipeleft {
+  transform: translateX(-15%);
+}
+
+.icon {
+  width: 50rpx;
+  height: 50rpx;
+  background: #fff;
+  border-radius: 45rpx;
+  padding: 20rpx;
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20rpx;
+  padding-top: 180rpx;
+  box-sizing: border-box;
+}
+
+.list .item {
+  background: #fff;
+  padding: 30rpx 30rpx 10rpx;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  border: none;
+  position: relative;
+}
+
+.list .item .goal {
+  font-size: 36rpx;
+  margin-bottom: 8rpx;
+}
+.list .item .date {
+  font-size: 24rpx;
+  color: #999;
+}
+.list .item .btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+}
+.list .item .btns .btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e2421b;
+  color: #fff;
+  border: none;
+  font-size: 26rpx;
+  width: 55px;
+}
+
+.list .item .btns .btn-top {
+  border-right: 2rpx solid #ca8080;
+}
+
+.list .item .btns .btn-delete {
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.tip {
+  font-size: 20rpx;
+  color: #999;
+  text-align: center;
+  padding: 10rpx 0 20rpx;
+}
+
+.empty {
+  background: #fff;
+  padding: 40rpx;
+  border-radius: 20rpx;
+  margin-bottom: 30rpx;
+}
+.empty .title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 15rpx;
+}
+.empty .description {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10rpx 0 40rpx;
+}
+.control .icon:nth-child(2) {
+  margin: 0 10rpx;
+}
+
+.theme-list {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 301;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  line-height: 50rpx;
+  color: #333;
+  background: #fff;
+}
+.theme-list .theme-item {
+  border-bottom: 1px solid #ddd;
+}
+.theme-list .theme-item .name {
+  margin-left: 10rpx;
+}
+.theme-list .theme-item label {
+  display: block;
+  width: 100%;
+  padding: 30rpx;
+}

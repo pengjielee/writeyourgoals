@@ -1,0 +1,78 @@
+.page {
+  padding: 30rpx;
+  padding-top: 100rpx;
+  box-sizing: border-box;
+}
+
+button::after {
+  border: none;
+}
+
+textarea {
+  width: 100%;
+  height: 250rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  font-size: 32rpx;
+  color: #999;
+  margin: 30rpx 0 40rpx;
+}
+.page-header .back {
+  width: 40rpx;
+  height: 40rpx;
+  transform: rotate(180deg);
+}
+
+.form-control {
+  display: flex;
+}
+.form-control button {
+  margin-bottom: 30rpx;
+  flex: 0 1 50%;
+  border-radius: 0;
+  height: 50px;
+  line-height: 50px;
+}
+.form-control .btn-primary {
+  background: #3e62ad;
+  color: #fff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.form-control .btn-clear {
+  background: #f3f4f8;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.form-import {
+  text-align: right;
+  font-size: 28rpx;
+  color: #999;
+  padding: 20rpx 0 30rpx;
+}
+
+.tpls {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 301;
+  width: 100%;
+  padding: 0 30rpx;
+  font-size: 32rpx;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.tpls .item {
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #ddd;
+}

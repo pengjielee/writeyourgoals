@@ -1,0 +1,15 @@
+{
+  "name": "goals",
+  "version": "1.0.0",
+  "description": "目标管理",
+  "main": "index.js",
+  "scripts": {
+    "pretty": "prettier --write src/**/*.{js,wxss} src/**/**/*.{js,wxss}"
+  },
+  "keywords": [],
+  "author": "pengjielee",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.2.1"
+  }
+}

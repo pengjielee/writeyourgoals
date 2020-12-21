@@ -1,0 +1,23 @@
+<view class="page page-add">
+	<view class="page-header" bindtap="handleBack">
+		<image class="back" src="../../images/right.png"></image><text>返回</text>
+	</view>
+	<form bindsubmit="handleSubmit">
+		<view class="form-area">
+			<textarea name="goal" placeholder="写下你的目标" value="{{goal}}"></textarea>
+		</view>
+		<view class="form-import" bindtap="handleImportTap"><text>从模板导入</text></view>
+		<view class="form-control">
+			<button style="background:{{theme}}" form-type="submit" class="btn-primary">保存</button>
+			<button form-type="reset" class="btn-clear">重置</button>
+		</view>
+	</form>
+	<block wx:if="{{isShowTpls}}">
+		<view class="overlay" bindtap="handleOverlayTap"></view>
+		<view class="list tpls" wx:if="{{ tpls && tpls.length > 0 }}">
+			<view wx:for="{{tpls}}" wx:for-index="index" wx:for-item="item" wx:key="{{index}}" class="item" data-idx="{{index}}" bindtap="handleTplTap">
+				<view class="text"><text>{{item}}</text></view>
+			</view>
+		</view>
+	</block>
+</view>

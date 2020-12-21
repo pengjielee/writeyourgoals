@@ -1,0 +1,12 @@
+<view class="page">
+	<view class="bg"><image mode="aspectFit" class="home" src="../../images/home.jpg"></image></view>
+	<view class="content">
+		<view><text>一年又一年</text></view>
+		<view><text>还记得年初写下的目标吗</text></view>
+		<view><text>新的一年</text></view>
+		<view><text>写下你的目标</text></view>
+	</view>
+	<view class="controls">
+		<button class="btn-start" bindtap="handleStart">开始</button>
+	</view>
+</view>

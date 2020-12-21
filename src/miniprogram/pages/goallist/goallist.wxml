@@ -1,0 +1,37 @@
+<view class="page" style="background:{{theme}}">
+	<view class="list" wx:if="{{ goals && goals.length > 0 }}">
+		<view wx:for="{{goals}}" wx:for-item="item" wx:key="_id" data-id="{{item._id}}" bindtap="handleGoalTap" class="item">
+			<view class="goal"><text>{{item.goal}}</text></view>
+			<view class="date"><text>{{item.date}}</text></view>
+			<view class="btns" wx:if="{{item.control}}">
+				<button class="btn btn-top" bindtap="handleGoalTop" data-id="{{item._id}}">置顶</button>
+				<button class="btn btn-delete" bindtap="handleGoalDelete" data-id="{{item._id}}">删除</button>
+			</view>
+		</view>
+	</view>
+	<view class="empty" wx:else>
+		<view class="title"><text>还没有目标</text></view>
+		<view class="description"><text>点击下面按钮新增一个</text></view>
+	</view>
+
+	<view class="tip" wx:if="{{ isLoaded }}">
+		<text>最多15个目标，点击目标可以删除</text>
+	</view>
+
+	<view class="control">
+		<image wx:if="{{ isShowAdd }}" src="../../images/add.png" class="icon icon-add" bindtap="handleGoalAdd"></image>
+		<image src="../../images/setting.png" class="icon icon-setting" bindtap="handleSettingShow"></image>
+	</view>
+</view>
+
+<block wx:if="{{ isShowSettings }}">
+	<view class="overlay" bindtap="handleSettingHide"></view>
+	<radio-group class="theme-list radio-group" bindchange="onThemeChange">
+	  <view style="background:{{theme}};color:{{item.color}}" class="theme-item" wx:for="{{themes}}" wx:key="id">
+	  	<label>
+		    <radio value="{{item.value}}" checked="{{item.checked}}"/>
+		    <text class="name">{{item.name}}</text>
+	    </label>
+	  </view>
+	</radio-group>
+</block>
