@@ -4,12 +4,11 @@
 
 ## 页面效果
 
-![首页](http://static.pengjielee.cn/images/goals01.png)
-![目标列表](http://static.pengjielee.cn/images/goals02.png)
-![目标添加](http://static.pengjielee.cn/images/goals03.png)  
-![设置主题](http://static.pengjielee.cn/images/goals04.png)
-![模板导入](http://static.pengjielee.cn/images/goals05.png)
-![置顶删除](http://static.pengjielee.cn/images/goals06.png)
+![首页](https://raw.githubusercontent.com/pengjielee/writeyourgoals/main/screenshot/goals_home.jpg)
+![目标列表](https://raw.githubusercontent.com/pengjielee/writeyourgoals/main/screenshot/goals_list.jpg)
+![目标添加](https://raw.githubusercontent.com/pengjielee/writeyourgoals/main/screenshot/goals_add.jpg)  
+![设置主题](https://raw.githubusercontent.com/pengjielee/writeyourgoals/main/screenshot/goals_theme.jpg)
+![模板导入](https://raw.githubusercontent.com/pengjielee/writeyourgoals/main/screenshot/goals_tpl.jpg)
 
 ## 实现功能
 
